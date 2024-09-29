@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B0C10; /* Very dark background for contrast */
+    color: #C5C6C7; /* Light grey for text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header.navbar {
+    background-color: #1F2833; /* Dark blue-grey for the navbar */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header.navbar a.navbar-brand {
+    font-size: 24px;
+    color: #66FCF1; /* Bright aqua accent */
+    font-weight: bold;
+}
+
+header.navbar .nav-link {
+    color: #C5C6C7; /* Light grey for navbar links */
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+header.navbar .nav-link:hover {
+    color: #66FCF1; /* Aqua hover effect */
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #66FCF1; /* Aqua for section titles */
+}
+
+/* Buttons */
+button, .project-link {
+    background-color: #66FCF1; /* Aqua for buttons */
+    color: #0B0C10; /* Dark background for text contrast */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, .project-link:hover {
+    background-color: #45A29E; /* Slightly darker aqua for hover effect */
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background-color: #1F2833; /* Dark background for cards */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Prominent shadow for visual separation */
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    background-color: #0B0C10; /* Darker background on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #66FCF1; /* Aqua border for contrast */
+}
+
+.project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-content h4 {
+    color: #C5C6C7; /* Light grey for project titles */
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    color: #C5C6C7; /* Light grey for project descriptions */
+    margin-bottom: 15px;
+}
+
+.project-tags span {
+    background-color: #1F2833; /* Dark grey-blue for tags */
+    color: #66FCF1; /* Aqua for tag text */
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #C5C6C7; /* Aqua for links */
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    justify-items: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #0B0C10, #1F2833); /* Gradient for skills section */
+    border-radius: 15px;
+    width: 170px;
+    transition: transform 0.3s, background 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item:hover {
+    background: linear-gradient(135deg, #66FCF1, #1F2833); /* Interactive color change on hover */
+    transform: scale(1.1); /* Hover scale effect */
+}
+
+.skill-icon {
+    width: 90px;
+    height: 90px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #C5C6C7;
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1F2833; /* Dark background for form */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form .form-control {
+    background-color: #0B0C10;
+    border: none;
+    color: #f4f5f7;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.contact-form .form-control:focus {
+    background-color: #1F2833;
+    border-color: #66FCF1;
+}
+
+.contact-form button {
+    background-color: #66FCF1;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45A29E;
+}

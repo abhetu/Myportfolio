@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0b16; /* Dark background for contrast */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1b1b3a; /* Deep blue for the navbar */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header a.navbar-brand {
+    font-size: 24px;
+    color: #ff2e63; /* Bright accent for your name */
+    font-weight: bold;
+}
+
+header .nav-link {
+    color: #fff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+header .nav-link:hover {
+    color: #08d9d6; /* Hover effect with soft teal */
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff2e63; /* Vibrant pink for section titles */
+}
+
+/* Buttons */
+button, .project-link {
+    background-color: #ff2e63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover, .project-link:hover {
+    background-color: #e63946; /* Slight darker tone for hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #1f1f1f, #343a40);
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Hover scale for cards */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff2e63; /* Adding color contrast */
+}
+
+.project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-tags span {
+    background-color: #08d9d6; /* Soft teal for tech tags */
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    justify-items: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #232526, #414345); /* Adding gradient */
+    border-radius: 15px;
+    width: 170px;
+    transition: transform 0.3s, background 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item:hover {
+    background: linear-gradient(135deg, #ff2e63, #08d9d6); /* Interactive hover color change */
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 90px;
+    height: 90px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form .form-control {
+    background-color: #232526;
+    border: none;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.contact-form .form-control:focus {
+    background-color: #414345;
+    border-color: #ff2e63;
+}
+
+.contact-form button {
+    background-color: #08d9d6;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00b0b9;
+}

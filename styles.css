@@ -38,6 +38,36 @@ h2 {
     color: #66FCF1; /* Aqua for section titles */
 }
 
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#about .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-image {
+    border-radius: 50%;
+    border: 5px solid #66FCF1; /* Add a soft border around the image */
+    width: 50px; /* Larger, eye-catching size */
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #66FCF1;
+}
+
 /* Buttons */
 button, .project-link {
     background-color: #66FCF1; /* Aqua for buttons */

@@ -17,7 +17,7 @@ You can view the live version of the portfolio here: [My Portfolio](https://abhe
 ## Technologies Used
 
 - **HTML** for structure
-- **CSS** for styling (with Tailwind CSS and custom styles)
+- **CSS** for styling (with Bootstrap and custom styles)
 - **JavaScript** for interactive elements
 - **GitHub Pages** for deployment
 

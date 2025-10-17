@@ -1,6 +1,6 @@
 // Smooth scrolling for navbar links
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
@@ -12,17 +12,30 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 // Change navbar background on scroll
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('header.navbar');
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('header.navbar');
     if (window.pageYOffset > 50) {
-        navbar.classList.add('scrolled');  // Add the "scrolled" class when the user scrolls down
+        navbar.classList.add('scrolled');
     } else {
-        navbar.classList.remove('scrolled');  // Remove the "scrolled" class when the user is at the top
+        navbar.classList.remove('scrolled');
     }
 });
 
 // Navbar burger icon toggle for mobile view
-document.querySelector('.navbar-toggler').addEventListener('click', function() {
-    var navbarCollapse = document.querySelector('#navbarNav');
-    navbarCollapse.classList.toggle('show');  // Toggle the 'show' class for opening and closing the navbar in mobile view
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    const navbarCollapse = document.querySelector('#navbarNav');
+    navbarCollapse.classList.toggle('show');
 });
+
+// Fade-in animation for sections when they enter view
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.15 });
+
+sections.forEach(section => observer.observe(section));
